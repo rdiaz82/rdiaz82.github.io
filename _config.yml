@@ -1,0 +1,35 @@
+# This is the default format.
+# For more see: http://jekyllrb.com/docs/permalinks/
+permalink: /:title
+# https://help.github.com/articles/migrating-your-pages-site-from-maruku
+markdown: kramdown
+
+highlighter: pygments
+
+plugins: [jekyll-paginate]
+paginate: 5 # pagination based on number of posts
+paginate_path: "page/:num"
+
+# These paths are to the main pages Jekyll-Bootstrap ships with.
+# Some JB helpers refer to these paths; change them here if needed.
+#
+categories_path : categories.html
+tags_path : tags.html
+
+BASE_PATH : http://localhost:4000
+
+
+title : Roberto Diaz
+
+
+
+author:
+  name: Roberto Diaz
+  role: Software Developer
+  email: meliodus@tutanota.com
+  github: meliodus
+  twitter: talk2ankan
+  facebook: talk2ankan
+  googleplus: +AnkanBiswasWorkspace
+  bio: "interested on mobile development, functional programming,<br/> internet of things, beer homebrew and father level 2"
+  uno-dbyll: http://localhost:4000/uno-dbyll.png
