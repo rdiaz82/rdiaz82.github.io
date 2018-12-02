@@ -4,7 +4,7 @@ permalink: /:title
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
-highlighter: pygments
+highlighter: rouge
 
 plugins: [jekyll-paginate]
 paginate: 5 # pagination based on number of posts
@@ -18,17 +18,12 @@ tags_path : tags.html
 
 BASE_PATH : https://rdiaz82.github.io
 
-
 title : Roberto Diaz
-
-
 
 author:
   name: Roberto Diaz
   role: Software Developer
-  email: meliodus@tutanota.com
-  github: meliodus
-  twitter: talk2ankan
-  facebook: talk2ankan
-  googleplus: +AnkanBiswasWorkspace
-  bio: "I'm passionate about technology and I'm always learning new things"
+  email: info@rdiaz.es
+  github: rdiaz82
+  twitter: rdiaz82
+  bio: "Soy un apasionado de la tecnología que siempre está buscando cosas nuevas que aprender."
