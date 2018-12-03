@@ -33,7 +33,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .page-header {
-	color: #e74c3c;
+	color: #428bca;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 	padding: 0 5% 0;
 	font-family: ubuntu;
@@ -159,3 +159,8 @@ margin-left: 3px;
 	margin-right: 3px;
 }
 
+@media only screen and (min-width : 768px) {
+    #nav-menu {
+        display: none!important;
+    }
+}
