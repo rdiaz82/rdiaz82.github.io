@@ -15,7 +15,7 @@ tags:
 &nbsp;
 
 <p style="text-align: justify;">
-  <a href="https://i0.wp.com/rdiaz.es/wp-content/uploads/2017/06/Welcome_To_Fabulous_Las_Vegas_sign_back.jpg"><img class="alignleft size-medium wp-image-289" src="https://i0.wp.com/rdiaz.es/wp-content/uploads/2017/06/Welcome_To_Fabulous_Las_Vegas_sign_back.jpg?resize=300%2C213" alt="" width="300" height="213" srcset="https://i0.wp.com/rdiaz.es/wp-content/uploads/2017/06/Welcome_To_Fabulous_Las_Vegas_sign_back.jpg?resize=300%2C213 300w, https://i0.wp.com/rdiaz.es/wp-content/uploads/2017/06/Welcome_To_Fabulous_Las_Vegas_sign_back.jpg?w=540 540w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a>Hace mucho tiempo&#8230; desde Junio de 2014 no publicaba nada en el blog. Lo curioso es que esa entrada de 2014 decía que iba a ser más activo en cuanto a publicaciones y todo quedó en esa única publicación :P. Con esta entrada no voy a hacer ninguna promesa de ese tipo, pero es verdad que se me apetece después de mucho tiempo (nada más y nada menos que 3 años) quiero retomar el blog.
+   Hace mucho tiempo&#8230; desde Junio de 2014 no publicaba nada en el blog. Lo curioso es que esa entrada de 2014 decía que iba a ser más activo en cuanto a publicaciones y todo quedó en esa única publicación :P. Con esta entrada no voy a hacer ninguna promesa de ese tipo, pero es verdad que se me apetece después de mucho tiempo (nada más y nada menos que 3 años) quiero retomar el blog.
 </p>
 
 <p style="text-align: justify;">
