@@ -15,7 +15,7 @@ tags:
   - IoT
 ---
 <p style="text-align: justify;">
-  <a href="https://i2.wp.com/rdiaz.es/wp-content/uploads/2017/06/ESP8266.jpg"><img class="alignleft size-medium wp-image-302" src="https://i2.wp.com/rdiaz.es/wp-content/uploads/2017/06/ESP8266.jpg?resize=300%2C300" alt="" width="300" height="300" srcset="https://i2.wp.com/rdiaz.es/wp-content/uploads/2017/06/ESP8266.jpg?resize=300%2C300 300w, https://i2.wp.com/rdiaz.es/wp-content/uploads/2017/06/ESP8266.jpg?resize=150%2C150 150w, https://i2.wp.com/rdiaz.es/wp-content/uploads/2017/06/ESP8266.jpg?w=538 538w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a>Desde la llegada al mercado de todo el ecosistema arduino en sus diferentes variantes, cualquier aficionado a la electrónica es capaz de llevar a cabo todo tipo de proyectos. El principal problema de las soluciones arduinos es la necesidad de accesorios para proporcionar conectividad de red o modelos específicos como el arduino yun.
+Desde la llegada al mercado de todo el ecosistema arduino en sus diferentes variantes, cualquier aficionado a la electrónica es capaz de llevar a cabo todo tipo de proyectos. El principal problema de las soluciones arduinos es la necesidad de accesorios para proporcionar conectividad de red o modelos específicos como el arduino yun.
 </p>
 
 <p style="text-align: justify;">
