@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<title>{{ page.title }}</title>
+		<title>{{ page.title }} - rdiaz.es</title>
 
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
@@ -109,11 +109,12 @@ $("#sidebar").animate({width:'33.3333%'},'slow');
 
 <footer style="color:#888; font-size:10px;">
     <div class="container">
-      <p>Some rights reserved &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}.<br/>
-      Created using <a class="navbar-button" href="https://github.com/jekyll/jekyll">Jekyll</a>. Theme : <a class="navbar-button" href="https://github.com/talk2ankan/uno-dbyll">uno-dbyll</a> by talk2ankan.
- </p>
- </div>
-  </footer>
+        <p>Some rights reserved &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}.<br/>
+            Created using <a class="navbar-button" href="https://github.com/jekyll/jekyll">Jekyll</a>. Theme : <a class="navbar-button" href="https://github.com/talk2ankan/uno-dbyll">uno-dbyll</a> by talk2ankan.
+        </p>
+    </div>
+</footer>
 </div>
+{% include analytics.html %}
 </body>
 </html>
