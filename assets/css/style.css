@@ -158,6 +158,16 @@ margin-left: 3px;
 	margin-right: 3px;
 }
 
+.social4{
+
+	  border:1px solid white;
+	  padding-left: 13px;
+	  border-radius: 20px;
+	  margin-left: 3px;
+	  margin-right: 3px;
+}
+
+
 @media only screen and (min-width : 768px) {
     #nav-menu {
         display: none!important;

@@ -33,6 +33,12 @@
          <i class="fa fa-twitter"></i>
      </a>
      {% endif %}
+
+     {% if site.author.linkedin%}
+     <a type="button" class="social4" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
+         <i class="fa fa-linkedin"></i>
+     </a>
+     {% endif %}
      
      {% if site.author.email %}
      <a type="button" class="social3" href="mailto:{{ site.author.email }}">
