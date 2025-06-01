@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Roberto Diaz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-white text-gray-900">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-bold text-xl text-black"></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-black transition-colors duration-300 font-medium">Home</a>
+                    <a href="#about" class="text-black border-b-2 border-blue-500 font-medium">About me</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-black transition-colors duration-300 font-medium">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-black">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-black transition-colors duration-300 font-medium">Home</a>
+                <a href="#about" class="block py-2 text-black font-medium">About me</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-black transition-colors duration-300 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- About Me Header Section -->
+        <section class="py-20 bg-gradient-to-br from-gray-50 to-white">
+            <div class="max-w-4xl mx-auto px-8">
+                <div class="text-center mb-12 fade-in">
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">About Me</h1>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-12 items-center fade-in">
+                    <div class="md:col-span-1">
+                        <div class="relative mt-300">
+                            <div class="w-64 h-64 mx-auto bg-gray-200 rounded-full overflow-hidden shadow-lg">
+                                <img src="images/profile_pic.jpg" 
+                                     alt="Roberto Diaz" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <div class="prose prose-lg max-w-none">                            
+                            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                My journey started in a completely different field, I began my career as a researcher in Radiofrequency Integrated Circuits, 
+                                where I earned my PhD. However, I realized that my work felt too disconnected from real people and end users. This drove me 
+                                to make a pivotal career change in 2007, transitioning into programming where I could build solutions that directly impact 
+                                people's lives.
+                            </p>
+                            
+                            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                Since making that transition, I've discovered my calling in creating technology that serves people. Over the years, I've worked 
+                                on different things, from mobile AR experiences that bring digital worlds to life, to healthcare management systems that helps to 
+                                organise people work, to AI-powered platforms that make complex data accessible. Each project reinforces my belief that the best 
+                                technology is the kind that feels natural and solves genuine human problems.
+                            </p>
+                            
+                            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                I specialize in modern tech stacks including Java, Python, Elixir, and JavaScript ecosystems, with deep expertise in cloud-native architectures 
+                                on AWS, Azure, and Google Cloud. Recently, I've been diving deep into AI integration, working with LangChain, vector databases like Weaviate, 
+                                Typesense or ChromaDB, and building RAG systems that make data truly intelligent.
+                            </p>
+                            
+                            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                What drives me most is clean architecture and scalable solutions. I have contributed to open source projects like OpenWhisk, where I developed 
+                                the Rust runtime, and Booster Framework. I also love sharing knowledge, you might catch me speaking at conferences about the latest innovations.
+                            </p>
+                            
+                            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                When I'm not coding, you'll probably find me diving into music production or practicing saxophone or piano. I'm a complete beginner but absolutely 
+                                loving the journey of learning this beautiful instrument. Music and code share something special: they're both about creating harmony from complexity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="py-20 bg-gradient-to-br from-gray-50 via-slate-50 to-blue-50" style="background: linear-gradient(to bottom right, #f3f4f6, #e2e8f0, #dbeafe);">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Technical Expertise</h2>
+                    <p class="text-xl text-zinc-600">Grounded in experience, driven by curiosity</p>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Programming Languages</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/java-original.svg" alt="Java" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Java</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/kotlin-original.svg" alt="Kotlin" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Kotlin</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/python-original.svg" alt="Python" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Python</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/elixir-original.svg" alt="Elixir" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Elixir</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/rust-original.svg" alt="Rust" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Rust</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/javascript-original.svg" alt="JavaScript" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">JavaScript</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/typescript-original.svg" alt="TypeScript" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">TypeScript</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Frameworks -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Backend Frameworks</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/spring-original.svg" alt="Spring Boot" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Spring Boot</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/django-plain.svg" alt="Django" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Django</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/nodejs-original.svg" alt="Node.js" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Node.js</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/fastapi-original.svg" alt="FastAPI" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">FastAPI</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/phoenix-original.svg" alt="Phoenix" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Phoenix</h4>
+                            </div>
+                        </div>
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/nestjs-original.svg" alt="Nest.js" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Nest.js</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Frameworks -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Frontend Frameworks</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/react-original.svg" alt="React" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">React</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/svelte-original.svg" alt="Svelte" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Svelte</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/tailwindcss-original.svg" alt="Tailwind CSS" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Tailwind CSS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Databases -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Cloud & Databases</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/amazonwebservices-plain-wordmark.svg" alt="AWS" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">AWS</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/azure-original.svg" alt="Azure" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Azure</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/googlecloud-original.svg" alt="Google Cloud" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Google Cloud</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/postgresql-original.svg" alt="PostgreSQL" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">PostgreSQL</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/mongodb-original.svg" alt="MongoDB" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">MongoDB</h4>
+                            </div>
+                        </div>
+
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/kubernetes-plain.svg" alt="Kubernetes" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Kubernetes</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/docker-original.svg" alt="Docker" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Docker</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">AI & Machine Learning</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/langchain-logo.svg" alt="LangChain" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">LangChain</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/openai-logo.svg" alt="OpenAI" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">OpenAI</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/rag-knowledge.svg" alt="RAG Systems" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">RAG Systems</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/weaviate-logo.svg" alt="Weaviate" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Weaviate</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/typesense-logo.svg" alt="Typesense" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Typesense</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/langfuse-official.svg" alt="Langfuse" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Langfuse</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/openwebui-logo.png" alt="Open WebUI" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Open WebUI</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Tools -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Development Tools</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/git-original.svg" alt="Git" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Git</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/github-original.svg" alt="GitHub Actions" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">GitHub Actions</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/jenkins-original.svg" alt="Jenkins" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Jenkins</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- Experience Timeline -->
+    <section class="py-20 bg-gradient-to-br from-slate-700 via-blue-800 to-indigo-900">
+        <div class="max-w-4xl mx-auto px-8">
+            <div class="text-center mb-16 animate-fade-up">
+                <h2 class="text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                    Journey Through Industries
+                </h2>
+                <p class="text-xl text-gray-300">17+ years across diverse sectors</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
+                
+                <div class="space-y-12">
+                    <div class="timeline-item flex items-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-8 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="glass-effect rounded-2xl p-6 flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2">AI & Machine Learning</h3>
+                            <p class="text-gray-300">Semantic search systems, RAG implementations, AI-powered data extraction</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item flex items-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-8 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+                            </svg>
+                        </div>
+                        <div class="glass-effect rounded-2xl p-6 flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2">Cloud & Infrastructure</h3>
+                            <p class="text-gray-300">QA automation, CI/CD pipelines, government data visualization systems</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item flex items-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mr-8 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="glass-effect rounded-2xl p-6 flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2">Healthcare Technology</h3>
+                            <p class="text-gray-300">Payment systems, schedule management, digital healthcare solutions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item flex items-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mr-8 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                            </svg>
+                        </div>
+                        <div class="glass-effect rounded-2xl p-6 flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2">E-commerce & Logistics</h3>
+                            <p class="text-gray-300">E-commerce platforms, retail logistics, rent-a-car systems, hotel management</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item flex items-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center mr-8 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="glass-effect rounded-2xl p-6 flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2">Emerging Technologies</h3>
+                            <p class="text-gray-300">Augmented reality mobile apps, innovative digital experiences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Open Source & Community -->
+        <section class="py-20 bg-gradient-to-br from-purple-700 via-violet-800 to-fuchsia-900 text-white relative">
+            <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+            <div class="max-w-6xl mx-auto px-8 relative z-10">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold mb-4 text-white">
+                        Community & Contributions
+                    </h2>
+                    <p class="text-xl text-blue-100">Sharing what I know, learning along the way</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="floating-card rounded-3xl p-8 fade-in">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">OpenWhisk</h3>
+                                <p class="text-blue-200">Rust Runtime Developer</p>
+                            </div>
+                        </div>
+                        <p class="text-blue-100 leading-relaxed">
+                            Developed and maintained the official Rust runtime for Apache OpenWhisk serverless platform, 
+                            enabling developers to build high-performance serverless functions.
+                        </p>
+                    </div>
+                    
+                    <div class="floating-card rounded-3xl p-8 fade-in">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Booster Framework</h3>
+                                <p class="text-blue-200">Core Contributor</p>
+                            </div>
+                        </div>
+                        <p class="text-blue-100 leading-relaxed">
+                            Active contributor to this open-source event-driven serverless framework, 
+                            helping shape the future of modern application development.
+                        </p>
+                    </div>
+                    
+                    <div class="floating-card rounded-3xl p-8 fade-in md:col-span-2">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-indigo-500 rounded-2xl flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Conference Speaker</h3>
+                                <p class="text-blue-200">Coding Stories Worth Sharing</p>
+                            </div>
+                        </div>
+                        <p class="text-blue-100 leading-relaxed">
+                            I've been fortunate to share some of my experiences at tech conferences, especially around serverless and cloud architectures.
+                             What inspires me most is the chance to connect with others: learning from their journeys, exchanging ideas, and growing together 
+                             as a community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Ready to Build Something Amazing?</h2>
+                <div class="flex justify-center items-center space-x-8 mb-8">
+                    <span class="text-gray-500 font-medium">Connect with me:</span>
+                    <a href="https://linkedin.com/in/rdiaz82" 
+                       target="_blank" 
+                       class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center space-x-2 group">
+                        <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/rdiaz82" 
+                       target="_blank" 
+                       class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center space-x-2 group">
+                        <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.237 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="text-sm text-gray-500">
+                    © <script>document.write(new Date().getFullYear())</script> Roberto Diaz.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
