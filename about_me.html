@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Roberto Diaz</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YPCNKT36P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5YPCNKT36P');
+    </script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans bg-white text-gray-900">
@@ -237,7 +246,32 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Mobile Development -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Mobile Development</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/android-original.svg" alt="Android" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Android</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/apple-original.svg" alt="iOS" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">iOS</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/apache-original.svg" alt="Cordova" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Cordova</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Cloud & Databases -->
                 <div class="mb-16 fade-in">
                     <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Cloud & Databases</h3>
@@ -355,9 +389,9 @@
                     </div>
                 </div>
 
-                <!-- Development Tools -->
+                <!-- Development & CI/CD Tools -->
                 <div class="fade-in">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Development Tools</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Development & CI/CD Tools</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
                             <div class="flex items-center">
@@ -377,6 +411,13 @@
                             <div class="flex items-center">
                                 <img src="images/icons/jenkins-original.svg" alt="Jenkins" class="tech-logo mr-4">
                                 <h4 class="font-semibold text-gray-900">Jenkins</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center">
+                                <img src="images/icons/airflow-original.svg" alt="Apache Airflow" class="tech-logo mr-4">
+                                <h4 class="font-semibold text-gray-900">Apache Airflow</h4>
                             </div>
                         </div>
                     </div>
